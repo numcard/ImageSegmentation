@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="378.0" prefWidth="645.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="app.controller.ImageOverviewController">
+   <children>
+      <ImageView fx:id="pic1" fitHeight="220.0" fitWidth="300.0" layoutX="14.0" layoutY="56.0" nodeOrientation="INHERIT" pickOnBounds="true" preserveRatio="true">
+         <viewport>
+            <Rectangle2D />
+         </viewport>
+         <image>
+            <Image url="@../resource/no-image.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="pic2" fitHeight="220.0" fitWidth="300.0" layoutX="331.0" layoutY="56.0" nodeOrientation="INHERIT">
+         <cursor>
+            <Cursor fx:constant="DEFAULT" />
+         </cursor>
+         <viewport>
+            <Rectangle2D />
+         </viewport>
+         <image>
+            <Image url="@../resource/no-image1.jpg" />
+         </image>
+      </ImageView>
+      <Button layoutX="89.0" layoutY="289.0" mnemonicParsing="false" onAction="#handleOpenImage" text="Открыть изображение" />
+      <Button layoutX="405.0" layoutY="289.0" mnemonicParsing="false" onAction="#handleSaveImage" text="Сохранить изображение" />
+   </children>
+</AnchorPane>
